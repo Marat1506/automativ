@@ -12,7 +12,7 @@ export class AuthService {
 
   async validateUser(login: string, pass: string): Promise<any> {
     const user = await this.usersService.findOne(login);
-    console.log("usergg = ", user)
+    console.log("usergg = ", user);
     console.log('Введенный пароль:', pass);
     console.log('Хранимый пароль в БД:', user?.password);
 

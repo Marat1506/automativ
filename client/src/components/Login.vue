@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import router from '@/router'
-import { useDataStore } from '@/stores/useDataStore'
+import router from '../router'
+import { useDataStore } from '../stores/useDataStore'
 import { onMounted, ref } from 'vue'
 import {useAuth} from "../composables/useAuth"
 

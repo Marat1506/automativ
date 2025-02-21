@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import UseCard from './UseCard.vue';
-import router from '@/router';
-import { useDataStore } from '@/stores/useDataStore';
+import router from '../router';
+import { useDataStore } from '../stores/useDataStore';
 import { computed, onMounted, ref } from 'vue';
-import { useAuth } from '@/composables/useAuth';
-import { useAccounts } from '@/composables/useAccount';
+import { useAuth } from '../composables/useAuth';
+import { useAccounts } from '../composables/useAccount';
 
 const store = useDataStore()
 const { 

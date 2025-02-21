@@ -2,17 +2,10 @@ import 'reflect-metadata';
 import { Sequelize } from 'sequelize-typescript';
 import { User } from './users/user.model';
 import * as bcrypt from 'bcryptjs';
+import { databaseConfig } from './config/database.config';
 
 async function seed() {
-  const sequelize = new Sequelize({
-    dialect: 'postgres',
-    host: 'localhost',
-    port: 5432,
-    username: 'postgres',
-    password: '1',
-    database: 'postgres',
-    models: [User],
-  });
+  const sequelize = new Sequelize(databaseConfig);
 
 
   await sequelize.authenticate();

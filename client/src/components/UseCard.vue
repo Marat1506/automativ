@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useAuth } from "@/composables/useAuth";
-import { useLogin } from "@/composables/useLogin";
+import { useAuth } from "../composables/useAuth";
+import { useLogin } from "../composables/useLogin";
 import { ref, watch } from "vue";
 
 const props = defineProps<{
@@ -39,8 +39,8 @@ const { inputPasswordValue, handleLogin, loginError } = useLogin();
       </n-input>
       </label>
      
-       <p v-if="loginError" class="error-text">{{ loginError }}</p>
-      <n-button @click="handleLogin(user.login)" type="info" block round class="login-button">Войти</n-button>
+        <p v-if="loginError" class="error-text">{{ loginError }}</p>
+        <n-button @click="handleLogin(user.login)" type="info" block round class="login-button">Войти</n-button>
     </div>
   </transition>
   </div>

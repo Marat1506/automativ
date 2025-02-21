@@ -1,5 +1,5 @@
 import { ref, computed } from 'vue';
-import { useDataStore } from '@/stores/useDataStore';
+import { useDataStore } from '../stores/useDataStore';
 
 export function useAccounts() {
   const store = useDataStore();

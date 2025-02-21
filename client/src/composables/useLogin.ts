@@ -1,5 +1,5 @@
 import { ref } from "vue";
-import router from "@/router";
+import router from "../router";
 
 export function useLogin() {
   const inputPasswordValue = ref("");
